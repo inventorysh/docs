@@ -38,5 +38,10 @@
       "x": "https://x.com/inventorysh",
       "discord": "https://discord.gg/ZPha6Cpe63"
     }
+  },
+  "seo": {
+    "metatags": {
+      "og:image": "/images/preview.png"
+    }
   }
 }
