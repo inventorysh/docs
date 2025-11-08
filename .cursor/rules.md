@@ -292,11 +292,11 @@ Complete user object with all associated data.
 Wrap all images in frames:
 
 <Frame>
-<img src="/images/dashboard.png" alt="Main dashboard showing analytics overview" />
+<img src="/assets/dashboard.png" alt="Main dashboard showing analytics overview" />
 </Frame>
 
 <Frame caption="The analytics dashboard provides real-time insights">
-<img src="/images/analytics.png" alt="Analytics dashboard with charts" />
+<img src="/assets/analytics.png" alt="Analytics dashboard with charts" />
 </Frame>
 
 #### Videos

@@ -14,12 +14,12 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/assets/logo/light.svg",
+    "dark": "/assets/logo/dark.svg"
   },
   "favicon": {
-    "dark": "/favicon_dark.svg",
-    "light": "/favicon_light.svg"
+    "dark": "/assets/favicon/dark.svg",
+    "light": "/assets/favicon/light.svg"
   },
   "navigation": {
     "groups": [
@@ -44,7 +44,7 @@
   },
   "seo": {
     "metatags": {
-      "og:image": "/images/preview.png"
+      "og:image": "/assets/preview.png"
     }
   }
 }
