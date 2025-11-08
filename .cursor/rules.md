@@ -1,27 +1,3 @@
----
-title: "Cursor setup"
-description: "Configure Cursor for your documentation workflow"
-icon: "arrow-pointer"
----
-
-Use Cursor to help write and maintain your documentation. This guide shows how to configure Cursor for better results on technical writing tasks and using Mintlify components.
-
-## Prerequisites
-
-- Cursor editor installed
-- Access to your documentation repository
-
-## Project rules
-
-Create project rules that all team members can use. In your documentation repository root:
-
-```bash
-mkdir -p .cursor
-```
-
-Create `.cursor/rules.md`:
-
-````markdown
 # Mintlify technical writing rule
 
 You are an AI writing assistant specialized in creating exceptional technical documentation using Mintlify components and following industry-leading technical writing practices.
@@ -162,7 +138,7 @@ Example of step-by-step instructions:
 <Steps>
 <Step title="Install dependencies">
   Run `npm install` to install required packages.
-  
+
   <Check>
   Verify installation by running `npm list`.
   </Check>
@@ -170,11 +146,11 @@ Example of step-by-step instructions:
 
 <Step title="Configure environment">
   Create a `.env` file with your API credentials.
-  
+
   ```bash
   API_KEY=your_api_key_here
   ```
-  
+
   <Warning>
   Never commit API keys to version control.
   </Warning>
@@ -295,12 +271,12 @@ Complete user object with all associated data.
 <Expandable title="User properties">
   <ResponseField name="profile" type="object">
   User profile information including personal details.
-  
+
   <Expandable title="Profile details">
     <ResponseField name="first_name" type="string">
     User's first name as entered during registration.
     </ResponseField>
-    
+
     <ResponseField name="avatar_url" type="string | null">
     URL to user's profile picture. Returns null if no avatar is set.
     </ResponseField>
@@ -328,20 +304,20 @@ Wrap all images in frames:
 Use the HTML video element for self-hosted video content:
 
 <video
-  controls
-  className="w-full aspect-video rounded-xl"
-  src="link-to-your-video.com"
+controls
+className="w-full aspect-video rounded-xl"
+src="link-to-your-video.com"
 ></video>
 
 Embed YouTube videos using iframe elements:
 
 <iframe
-  className="w-full aspect-video rounded-xl"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
+className="w-full aspect-video rounded-xl"
+src="https://www.youtube.com/embed/4KzFe50RQkQ"
+title="YouTube video player"
+frameBorder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowFullScreen
 ></iframe>
 
 #### Tooltips
@@ -364,7 +340,7 @@ Use updates for changelogs:
 ## Bug fixes
 - Fixed pagination issue with large datasets
 - Resolved authentication timeout problems
-</Update>
+  </Update>
 
 ## Required page structure
 
@@ -417,4 +393,3 @@ description: "Concise description explaining page purpose and value"
 - Use **RequestExample/ResponseExample** specifically for API endpoint documentation
 - Use **ParamField** for API parameters, **ResponseField** for API responses
 - Use **Expandable** for nested object properties or hierarchical information
-````
