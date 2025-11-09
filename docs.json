@@ -25,7 +25,11 @@
     "groups": [
       {
         "group": "The Basics",
-        "pages": ["index"]
+        "pages": [
+          "index",
+          "the-basics/why-bring-crypto",
+          "the-basics/tokenized-assets"
+        ]
       },
       {
         "group": "How Inventory Works",
