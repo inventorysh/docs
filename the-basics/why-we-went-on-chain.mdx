@@ -1,0 +1,26 @@
+---
+title: "Why we went on-chain?"
+description: "Could we build inventory.sh without crypto? Let’s think about it"
+---
+
+<img
+  className="block dark:hidden"
+  src="/assets/the-basics/onchain-offchain-light.png"
+  alt="Light mode interface"
+/>
+
+<img
+  className="hidden dark:block"
+  src="/assets/the-basics/onchain-offchain-dark.png"
+  alt="On-Chain vs Off-Chain Market Model"
+/>
+
+
+In the real world, people trade exposure to gold, oil, or stocks, but they’re trading *claims* on assets held somewhere else. That system works because there are institutions that warehouse the metal, **clear the trades** and **synchronize the books**. Those rails don’t exist for game items. Steam isn’t a custodian network, and no one is providing clearing, settlement, or liquidity synchronization across markets.
+
+To build a market that behaves like finance — with instant execution, continuous pricing, and transferable claims — we needed the equivalent of those rails. Blockchains give that out of the box: atomic settlement, open ledgers, [programmable liquidity](https://docs.meteora.ag/overview/products/damm-v2/what-is-damm-v2), and an accounting layer any platform can plug into.
+
+Without it, Inventory would just be another peer-to-peer wrapper around Steam trades: slow, illiquid, and impossible to scale beyond a few hundred users.
+On-chain, it becomes a proper market structure: every skin backed by a real asset, every trade settled instantly, and every price formed in the open.
+
+
