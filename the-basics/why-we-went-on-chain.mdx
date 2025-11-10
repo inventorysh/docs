@@ -6,7 +6,7 @@ description: "Could we build inventory.sh without crypto?"
 <img
   className="block dark:hidden rounded-lg"
   src="/assets/the-basics/onchain-offchain-light.png"
-  alt="Light mode interface"
+  alt="On-Chain vs Off-Chain Market Model"
 />
 
 <img
@@ -15,12 +15,21 @@ description: "Could we build inventory.sh without crypto?"
   alt="On-Chain vs Off-Chain Market Model"
 />
 
+We see similar examples in the real world: people can buy fractions of gold, trade oil futures, or hold shares in companies.
+And they're not moving the gold bars or oil barrels themselves; they're trading *claims* on those assets.
 
-In the real world, people trade exposure to gold, oil, or stocks, but they’re trading *claims* on assets held somewhere else. That system works because there are institutions that warehouse the metal, **clear the trades** and **synchronize the books**. Those rails don’t exist for game items. Steam isn’t a custodian network, and no one is providing clearing, settlement, or liquidity synchronization across markets.
+That works because the financial system has trusted infrastructure: institutions that store the assets, clear the trades, and keep every balance in sync.
+
+Game items have value too, but that kind of infrastructure doesn't exist here. Steam isn't a custodian network, and no one is clearing or synchronizing trades between markets. Every site runs its own closed system.
 
 To build a market that behaves like finance: with instant execution, continuous pricing, and transferable claims we needed the equivalent of those rails. Blockchains give that out of the box: atomic settlement, open ledgers, [programmable liquidity](https://docs.meteora.ag/overview/products/damm-v2/what-is-damm-v2), and an accounting layer any platform can plug into.
 
 Without it inventory would just be another peer-to-peer wrapper around Steam trades: slow, illiquid, and impossible to scale beyond a few hundred users.
 On-chain, it becomes a proper market structure: every skin backed by a real asset, every trade settled instantly, and every price formed in the open.
 
+## The trade-offs
 
+You can't hold a real skin unless you have enough tokens to redeem it.
+That's the trade-off. Liquidity comes from fractional ownership, and fractional ownership means separation between the token and the physical item.
+
+But each token keeps its value because it's backed by something real: a skin sitting in the vault.

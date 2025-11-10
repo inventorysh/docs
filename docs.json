@@ -28,14 +28,14 @@
         "pages": [
           "index",
           "the-basics/why-we-went-on-chain",
-          "the-basics/tokenized-assets"
+          "the-basics/how-to-tokenize-a-skin"
         ]
       },
       {
         "group": "How Inventory Works",
         "pages": [
-          "how-inventory-works/bonding-curve",
-          "how-inventory-works/skin-vault"
+          "how-inventory-works/skin-vault",
+          "how-inventory-works/bonding-curve"
         ]
       }
     ]
